@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :wabanex, Wabanex.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "elixer",
+  password: "elixer",
   database: "wabanex_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,

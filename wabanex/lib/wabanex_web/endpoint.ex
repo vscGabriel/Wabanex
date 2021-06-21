@@ -7,7 +7,7 @@ defmodule WabanexWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_wabanex_key",
-    signing_salt: "PQeBDJ4R"
+    signing_salt: "H+i1/ZQI"
   ]
 
   socket "/socket", WabanexWeb.UserSocket,
