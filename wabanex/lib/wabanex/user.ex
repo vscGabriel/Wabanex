@@ -12,14 +12,14 @@ defmodule Wabanex.User do
 
     timestamps()
   end
- def changeset(params) do
+
+  def changeset(params) do
     %__MODULE__{}
     |> cast(params, @fields)
     |> validate_required(@fields)
     |> validate_length(:password, min: 6)
     |> validate_length(:name, min: 2)
-    |>validate_format(:email, ~r/@/)
-    |>unique_constraint([:email])
+    |> validate_format(:email, ~r/@/)
+    |> unique_constraint([:email])
   end
-
 end

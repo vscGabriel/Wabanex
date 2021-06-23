@@ -1,19 +1,23 @@
 defmodule Wabanex.IMC do
   def calculate(%{"filename" => filename}) do
     filename
-    |> File.read() #faz a mesma coisa que a de baixo
-    |> handle_file() #só que via pipe operator
+    # faz a mesma coisa que a de baixo
+    |> File.read()
+    # só que via pipe operator
+    |> handle_file()
 
-  #  result = File.read(filename)
-  #  handle_file(result)
+    #  result = File.read(filename)
+    #  handle_file(result)
   end
 
   defp handle_file({:ok, content}) do
     data =
-    content
-    |>String.split("\n") #separa os elementos d arquivo passado em listas a partir da quebra de linha
-    |>Enum.map(fn line -> parse_line(line) end)  # cria uma dicionary "parseando" cada line.
-    |>Enum.into(%{})
+      content
+      # separa os elementos d arquivo passado em listas a partir da quebra de linha
+      |> String.split("\n")
+      # cria uma dicionary "parseando" cada line.
+      |> Enum.map(fn line -> parse_line(line) end)
+      |> Enum.into(%{})
 
     {:ok, data}
   end
@@ -24,13 +28,12 @@ defmodule Wabanex.IMC do
 
   defp parse_line(line) do
     line
-    |> String.split(",") # separa cada elemento da linha em strings
-    |>List.update_at(1, &String.to_float/1)
-    |>List.update_at(2, &String.to_float/1)
-    |>calculate_imc()
+    # separa cada elemento da linha em strings
+    |> String.split(",")
+    |> List.update_at(1, &String.to_float/1)
+    |> List.update_at(2, &String.to_float/1)
+    |> calculate_imc()
   end
 
-  defp calculate_imc([name, height, weight]), do: {name, weight/(height*height)}
-
-
+  defp calculate_imc([name, height, weight]), do: {name, weight / (height * height)}
 end
