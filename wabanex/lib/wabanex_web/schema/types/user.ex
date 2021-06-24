@@ -3,7 +3,7 @@ defmodule WabanexWeb.Schema.Types.User do
 
   import_types WabanexWeb.Schema.Types.Custom.UUID4
 
-  # a escrição a ser ixibida
+  # a escrição a ser exibida
   @desc "Logic user representation"
   object :user do
     field :id, non_null(:uuid4)
