@@ -2,6 +2,7 @@ defmodule WabanexWeb.Schema.Types.Root do
   use Absinthe.Schema.Notation
   # usa o as para apelidar
   alias WabanexWeb.Resolvers.User, as: UserResolver
+  alias Crudry.Middlewares.TranslateErrors
 
   import_types WabanexWeb.Schema.Types.User
 
@@ -12,6 +13,7 @@ defmodule WabanexWeb.Schema.Types.Root do
 
       # o & é a mesma coisa que fazer uma função anonima, só que mais sucinta. = resolve fn params, context -> UserResolver.get(params, context) and
       resolve &UserResolver.get/2
+
     end
   end
 
@@ -22,6 +24,7 @@ defmodule WabanexWeb.Schema.Types.Root do
 
       # o & é a mesma coisa que fazer uma função anonima, só que mais sucinta. = resolve fn params, context -> UserResolver.get(params, context) and
       resolve &UserResolver.create/2
+      middleware TranslateErrors
     end
 
   end
