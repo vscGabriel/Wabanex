@@ -2,19 +2,19 @@ defmodule Wabanex.Training do
   use Ecto.Schema
   import Ecto.Changeset
 
-  alias Wabanex.{User, Exercises}
+  alias Wabanex.{User, Exercise}
 
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
 
   @fields [:end_date,:start_date, :user_id]
 
-  schema "users" do
+  schema "trainings" do
     field :end_date, :date
     field :start_date, :date
 
     belongs_to :user, User
-    has_many :exercises, Exercises
+    has_many :exercises, Exercise
     timestamps()
   end
 
