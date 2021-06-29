@@ -3,7 +3,6 @@
  </h1>
 <a href="#tecnologias">Tecnologias</a> | <a href="#projeto">Projetos</a> | <a href="#execute">Como executar</a>
 
-<hr>
 <div >
 <h1>Tecnologias</h1>
   <ul id="tecnologias">
@@ -18,10 +17,9 @@
   <p>Consiste em uma API de gerenciamento de treinos de academia</p>
   <img src="/wabanex/assets/schema.png" alt="">
 </div>
-<hr>
+
 <div id="execute">
 <h1>Como executar</h1>
-
 <ul>
 <li>Clone o repositório</li>
 <li>Instale o phoenix <i>mix archive.install hex phx_new 1.5.9<i></li>
