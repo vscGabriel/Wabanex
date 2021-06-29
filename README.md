@@ -5,6 +5,7 @@
 
 <hr>
 <div >
+<h1>Tecnologias</h1>
   <ul id="tecnologias">
     <li><a href="https://elixir-lang.org/">Elixir</a></li>
     <li><a href="https://phoenixframework.org/">Phoenix</a></li>
@@ -13,17 +14,20 @@
 </div>
 <hr>
 <div id="projeto">
+<h1>Projeto</h1>
   <p>Consiste em uma API de gerenciamento de treinos de academia</p>
   <img src="/wabanex/assets/schema.png" alt="">
 </div>
 <hr>
 <div id="execute">
+<h1>Como executar</h1>
+
 <ul>
 <li>Clone o repositório</li>
-<li>Instale o phoenix mix archive.install hex phx_new 1.5.9</li>
-<li>Instale as dependencias do projeto mix deps.get</li>
-<li>Instale a database e rode as migrations mix ecto.setup</li>
-<li>Inicie o servidor do phoenix mix phx.server</li>
-<li>Por fim, caso precise você pode alterar as configurações do banco de dados pelo arquivo dev.exs e no arquivo config/test.exs</li>
+<li>Instale o phoenix <i>mix archive.install hex phx_new 1.5.9<i></li>
+<li>Instale as dependencias do projeto <i>mix deps.get<i></li>
+<li>Instale a database e rode as migrations <i>mix ecto.setup<i></li>
+<li>Inicie o servidor do phoenix <i>mix phx.server<i></li>
+<li>Por fim, caso precise você pode alterar as configurações do banco de dados pelo arquivo <i>dev.exs<i> e no arquivo <i>config/test.exs<i></li>
 </ul>
 </div>
