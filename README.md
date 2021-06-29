@@ -1,7 +1,9 @@
 <h1 align="center">
  Wabanex
  </h1>
+<div align="center">
 <a href="#tecnologias">Tecnologias</a> | <a href="#projeto">Projetos</a> | <a href="#execute">Como executar</a>
+</div>
 
 <div >
 <h1>Tecnologias</h1>
