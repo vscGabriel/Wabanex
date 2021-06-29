@@ -4,13 +4,11 @@
 <a href="#tecnologias">Tecnologias</a> | <a href="#projeto">Projetos</a> | <a href="#execute">Como executar</a>
 
 <hr>
-<div id="tecnologias">
-  <ul>
+  <ul id="tecnologias">
     <li><a href="https://elixir-lang.org/">Elixir</a></li>
     <li><a href="https://phoenixframework.org/">Phoenix</a></li>
     <li><a href="https://graphql.org/">Graphql</a></li>
   </ul>
-</div>
 <hr>
 <div id="projeto">
   <p>Consiste em uma API de gerenciamento de treinos de academia</p>
