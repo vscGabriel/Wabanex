@@ -3,7 +3,7 @@
  </h1>
 <a href="#tecnologias">Tecnologias</a> | <a href="#projeto">Projetos</a> | <a href="#execute">Como executar</a>
 
-
+<hr>
 <div id="tecnologias">
   <ul>
     <li><a href="https://elixir-lang.org/">Elixir</a></li>
@@ -11,12 +11,12 @@
     <li><a href="https://graphql.org/">Graphql</a></li>
   </ul>
 </div>
-
+<hr>
 <div id="projeto">
   <p>Consiste em uma API de gerenciamento de treinos de academia</p>
   <img src="/assets/schema.png" alt="">
 </div>
-
+<hr>
 <div id="execute">
 <ul>
 <li>Clone o repositório</li>
