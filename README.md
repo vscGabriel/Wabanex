@@ -4,15 +4,17 @@
 <a href="#tecnologias">Tecnologias</a> | <a href="#projeto">Projetos</a> | <a href="#execute">Como executar</a>
 
 <hr>
+<div >
   <ul id="tecnologias">
     <li><a href="https://elixir-lang.org/">Elixir</a></li>
     <li><a href="https://phoenixframework.org/">Phoenix</a></li>
     <li><a href="https://graphql.org/">Graphql</a></li>
   </ul>
+</div>
 <hr>
 <div id="projeto">
   <p>Consiste em uma API de gerenciamento de treinos de academia</p>
-  <img src="/assets/schema.png" alt="">
+  <img src="/wabanex/assets/schema.png" alt="">
 </div>
 <hr>
 <div id="execute">
