@@ -11,7 +11,7 @@
     <li><a href="https://graphql.org/">Graphql</a></li>
   </ul>
 </div>
-<hr>
+
 <div id="projeto">
 <h1>Projeto</h1>
   <p>Consiste em uma API de gerenciamento de treinos de academia</p>
